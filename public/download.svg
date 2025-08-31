@@ -1,0 +1,30 @@
+<!-- public/favicon.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <radialGradient id="g" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#7dd3fc"></stop>
+      <stop offset="50%" stop-color="#60a5fa"></stop>
+      <stop offset="100%" stop-color="#6366f1"></stop>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="b"></feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="b"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="256" height="256" rx="56" fill="url(#g)"></rect>
+  <!-- Orbital rings -->
+  <g opacity="0.5" stroke="white" fill="none" filter="url(#glow)">
+    <ellipse cx="128" cy="130" rx="84" ry="38" stroke-width="1.5"></ellipse>
+    <ellipse cx="128" cy="128" rx="64" ry="64" stroke-width="1.2"></ellipse>
+  </g>
+
+  <!-- Monogram RR -->
+  <g fill="white" filter="url(#glow)">
+    <path d="M74 162V90h34c18 0 30 10 30 26 0 11-6 20-17 24l18 22H120l-16-20H90v20H74zm16-34h17c10 0 16-5 16-12 0-8-6-12-16-12H90v24z"></path>
+    <path d="M146 162V90h34c18 0 30 10 30 26 0 11-6 20-17 24l18 22h-19l-16-20h-14v20h-16zm16-34h17c10 0 16-5 16-12 0-8-6-12-16-12h-17v24z"></path>
+  </g>
+</svg>
